@@ -1,0 +1,15 @@
+<% @songrequest = Songrequest.new %>
+
+<%= form_for @songrequest do |s| %>
+<%=s.label :title %>
+<%=s.text_field :title%>
+
+<%=s.label :artist %>
+<%=s.text_field :artist%>
+
+<%=s.label :requstor %>
+<%=s.text_field :requestor%>
+<br />
+
+<%=s.submit "Play My Song!", class: "btn btn-large btn-primary" %> 
+<%end%>

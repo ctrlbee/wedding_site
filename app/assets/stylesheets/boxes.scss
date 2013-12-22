@@ -1,0 +1,88 @@
+@import "variables";
+
+@mixin eventBox($eventHeight){
+	vertical-align: middle; 
+	text-align: center; 
+	height: $eventHeight; 
+	line-height: $eventHeight; 
+	padding: 5px; 
+	margin: 0; 
+	font-weight: bold;
+	border: 1px $grey solid;
+}
+
+.contentbox{
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+	border: 1px solid $grey;
+	border-top: 10px solid $grey; 
+	padding: 0 10px 10px 10px;
+	margin-bottom: 20px; 
+}
+
+
+.numberContainer{
+	border:1px solid $grey;
+	position: relative;
+}
+
+.numberStrip{
+	
+	padding-top:30px;
+	width: 50px !important; 
+	
+	ul{
+		list-style-type: none; 
+		
+		li{
+		text-align: right; 
+		line-height: 30px; 
+		}
+	}
+}
+
+.numberBox{
+
+	h4{
+		text-align: center;
+	}
+	.hr1{
+		@include eventBox(20px); 
+	}
+	.hr2{
+		@include eventBox(50px); 
+	}
+	.hr3{
+		@include eventBox(80px); 
+	}
+	.hr4{
+		@include eventBox(110px); 
+	}
+	.hr5{
+		@include eventBox(140px); 
+	}
+	.hr6{
+		@include eventBox(170px); 
+	}
+	.blank{
+		border: 0; 
+	}
+}
+
+div[id*="pop"]:hover{
+		background:rgba(198,226,255,0.5);
+	}
+
+.popupBox{
+	position: absolute;
+	line-height: 14px; 
+	z-index: 9000; 
+	padding: 10px; 
+	max-width: 300px; 
+	overflow: scroll;
+	background: rgba(255,255,255,0.9); 
+	border:1px solid $grey;
+}
+
+

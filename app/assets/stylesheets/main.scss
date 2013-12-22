@@ -1,0 +1,87 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap"; 
+@import "variables";
+
+@mixin setbg ($color){
+	background-color: $color; 
+}
+
+#nav{
+	z-index: 9500; 
+}
+
+.main{
+	padding-top: 40px; 
+}
+
+.main-cont{
+	padding-top: 20px; 
+}
+
+.main-text{
+	text-align: center; 
+	margin-bottom: 20px; 
+}
+
+.section {
+	
+}
+
+#sec0{
+	@include setbg($color3);
+	padding-top: 20px; 
+}
+
+#sec1{
+	@include setbg($color4);
+}
+
+#sec2{
+	@include setbg($color1);
+}
+
+#sec3{
+	@include setbg($color2);
+}
+
+#sec4{
+	@include setbg($color3);
+}
+
+#sec5{
+	@include setbg($color4);
+}
+
+#sec6{
+	@include setbg($color1);
+}
+
+#sec7{
+	@include setbg($color2);
+}
+
+#footer{
+	@include setbg(white);
+}
+
+.big-img{
+	
+}
+
+.sm-img{
+	padding-top: 40px; 
+}
+
+.huge {
+	font-size: 150px;
+	font-weight: bold; 
+	padding-top: 80px; 
+	text-align: center;
+}
+
+#footer{
+	padding: 40px 0 40px 0; 
+}

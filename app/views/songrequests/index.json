@@ -1,0 +1,11 @@
+#not being used!
+
+{
+	<% @songrequest.each do |s|%>
+
+		"title": "<%=s.title %>", 
+		"artist": "<%=s.artist %>",
+		"requestor": "<%=s.requestor %>",
+
+	<%end%>
+}

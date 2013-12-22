@@ -1,0 +1,35 @@
+@import "main"; 
+
+.img_grid {
+	
+	margin-bottom: 20px; 
+
+	li{
+		list-style-type: none; 
+	}
+
+	a img {
+		border: 2px solid $grey;
+	}
+
+	a:hover img {
+		border:2px solid $black;
+	}
+
+}
+
+img[class*='regImg']{
+	border: 2px $grey solid; 
+	width: 300px; 
+	margin-left: 80px; 
+}
+
+img[class*='regImg']:hover{
+	border:2px solid $black;
+}
+
+.soloImage{
+	border: 2px $grey solid; 
+	margin: 60px 0 30px 0; 
+	height: 300px; 
+}
