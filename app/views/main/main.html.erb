@@ -56,7 +56,14 @@
 			</p>
 		</div>
 	</div>
-
+	<div class="row">
+		<div class="span12">
+			<h4>RSVP</h4>
+			<p>
+				Please RSVP by mail. 
+			</p>
+		</div>
+	</div>	
 
 
 	<div class="row">
@@ -68,10 +75,10 @@
 	<%=render :partial => 'layouts/image_module', :locals => {:tag => "img_grid", :photos => [
 		"http://images.familyvacationcritic.com/sheratonplanning.jpg",
 		"http://www.tnetnoc.com/hotelphotos/044/32044/2631759-Sheraton-Hacienda-del-Mar-Golf-amp-Spa-Resort-Los-Cabos-Guest-Room-1-DEF.jpg", 
-		"http://www.orbitz.com//hotelimages/044/32044/Sheraton-Hacienda-del-Mar-Golf-Spa-Resort-Los-Cabos-Pool-3.jpg", 
-		"http://www.starwoodhotels.com/pub/media/1298/she1298po.89920_lg.jpg", 
 		"http://www.starwoodhotels.com/pub/media/1298/she1298mf.89934_lg.jpg" , 
-		"http://www.phoenixbrideandgroom.com/blog/wp-content/uploads/2012/05/002_AlecandT.jpg"
+		"http://www.orbitz.com//hotelimages/044/32044/Sheraton-Hacienda-del-Mar-Golf-Spa-Resort-Los-Cabos-Pool-3.jpg", 
+		"http://www.phoenixbrideandgroom.com/blog/wp-content/uploads/2012/05/002_AlecandT.jpg",
+		"http://www.starwoodhotels.com/pub/media/1298/she1298po.89920_lg.jpg"
 		] } %>
 
 	</div>
@@ -103,55 +110,51 @@
 			<div class="row">
 				<div class="span12">
 					<h4>What to Wear</h4>
-					<p>
-
-						Chambray pork belly keffiyeh, messenger bag freegan PBR selvage whatever Wes Anderson roof party literally squid Brooklyn brunch. Dreamcatcher authentic Williamsburg food truck. IPhone hoodie Neutra single-origin coffee, shabby chic 90's retro hella fashion axe. Tonx slow-carb street art chambray. Paleo plaid ethical cornhole keytar, cred 90's craft beer. Meggings aesthetic cliche, fashion axe letterpress post-ironic yr bicycle rights sustainable deep v master cleanse keffiyeh. Fap pour-over Austin, fashion axe blog Thundercats mumblecore bicycle rights Terry Richardson meh flannel keffiyeh pork belly lomo whatever.
-
-
-						PBR&B tote bag kale chips cornhole, Intelligentsia hashtag banh mi narwhal Blue Bottle fixie cred. Mustache tofu jean shorts Shoreditch, Neutra kogi tousled authentic fanny pack. Mustache McSweeney's swag trust fund dreamcatcher Tumblr Banksy four loko, viral disrupt fixie semiotics leggings sriracha. Asymmetrical freegan mumblecore whatever polaroid Bushwick plaid hella post-ironic, blog McSweeney's artisan ethical literally mlkshk. Aesthetic photo booth hella, plaid selfies swag Williamsburg pop-up bitters. Carles try-hard bitters, PBR&B Schlitz mlkshk shabby chic Helvetica sustainable put a bird on it cred keytar pug. Roof party sartorial letterpress Pitchfork.Pop-up actually scenester fap salvia. Meh Austin pickled, banjo post-ironic Carles 90's hella hashtag PBR&B kitsch tofu. Locavore deep v irony, small batch whatever single-origin coffee church-key dreamcatcher retro. Selfies flexitarian distillery, Portland DIY viral American Apparel mlkshk 90's retro. Mumblecore banjo narwhal pork belly chillwave. Hashtag Cosby sweater vinyl Williamsburg ethnic. Skateboard literally pickled messenger bag, distillery Terry Richardson jean shorts scenester cornhole.
-
-					</p>
-
+					<ul>
+					<li> <b>Friday Welcome Dinner: </b>Beach Chic. Sundresses or similar for the ladies, jeans or nice shorts &amp polo/button up for the gentlemen.</li>
+					<li><b>Saturday Daytime:</b> Swimwear. Flip flops, board shorts, bikinis. Pool party time.</li>
+					<li><b>Saturday Ceremony &amp Dinner:</b> Beach Formal for an elegant summer wedding. Semiformal dresses for the ladies with dress sandals/shoes. Lightweight summer suits with linen shirts for the gentlemen (tie is optional); closed toe shoes for the guys. Show us what you got stunner.</li>
+					<li><b>Sunday Brunch:</b> Beach Casual. Shorts, t-shirts, flip flops, bikinis and sarongs.</li>
+					</ul>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="span12">
-					<h4>RSVP</h4>
-					<p>
-						Please RSVP by mail. 
-					</p>
-				</div>
-			</div>
-
 		</div>
-
+		</div>
 				<div id="sec4">
 					<div class="container">
-						<h3>Requests</h3>
 
 						<div class="row">
-							<div class="span6">
+							<!-- <div class="span6">
 								<h4>Song Requests</h4>
 								<%=render 'songrequests/newsong' %>
-							</div>
-							<div class="span6">
-								<h4>Song Request AJAX</h4>
-								<form accept-charset="UTF-8" action="/songrequests" id="songrequest" method="post"><div style="margin:0;padding:0;display:inline">
-									<input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="bijeU8CXVDH0vtWA8mE67bnYSKJR3StBeMKJEwMi940="></div>
-									<label for="songrequest_title">Title</label>
-									<input id="songrequest_title" name="songrequest[title]" type="text">
+							</div> -->
+					
+								<form accept-charset="UTF-8" action="/songrequests" id="songrequest" method="post">
+								<input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="bijeU8CXVDH0vtWA8mE67bnYSKJR3StBeMKJEwMi940=">
+									<div class="span12">
+										<h3>Make a Song Request</h3>
+									</div>
 
-									<label for="songrequest_artist">Artist</label>
-									<input id="songrequest_artist" name="songrequest[artist]" type="text">
+									<div class="span3">
+											<label for="songrequest_requstor">Your Name</label>
+											<input id="songrequest_requestor" name="songrequest[requestor]" type="text">
+									</div>
+								
+									<div class="span3">
+										<label for="songrequest_title">Song Title</label>
+										<input id="songrequest_title" name="songrequest[title]" type="text">
+									</div>
 
-									<label for="songrequest_requstor">Requstor</label>
-									<input id="songrequest_requestor" name="songrequest[requestor]" type="text">
-									<br>
-
-									<input class="btn btn-large btn-primary" name="commit" type="submit" value="AJAX My Song!"> 
+									<div class="span3">
+										<label for="songrequest_artist">Artist</label>
+										<input id="songrequest_artist" name="songrequest[artist]" type="text">
+									</div>
+																	
+									<div class="span3">
+										<input class="btn btn-primary submitBtn" name="commit" type="submit" value="Play my Song!"> 
+									</div>
 								</form>
-							</div>
+		
 
 						</div>
 					</div>

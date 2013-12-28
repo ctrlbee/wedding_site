@@ -7,6 +7,8 @@
 
 @mixin setbg ($color){
 	background-color: $color; 
+	padding-top: 20px;
+	padding-bottom: 20px; 
 }
 
 #nav{
@@ -65,6 +67,7 @@
 
 #footer{
 	@include setbg(white);
+
 }
 
 .big-img{
@@ -80,8 +83,4 @@
 	font-weight: bold; 
 	padding-top: 80px; 
 	text-align: center;
-}
-
-#footer{
-	padding: 40px 0 40px 0; 
 }

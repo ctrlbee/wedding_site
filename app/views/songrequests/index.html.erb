@@ -1,24 +1,19 @@
 <div class="container">
-<h3> List</h3>
+<!-- <h3> Song requests:</h3>
 <% @songrequest.each do |s| %>
+	<%= s.requestor%>
 	<%= s.title %> 
 	<%= s.artist%>  
-	<%= s.requestor%>
-	<br />
-<%end%>
+	</br>
+<%end%> -->
 
-<h3> AJAX list 2</h3>
-
-	<div id="ajaxlist2">
-	where is my list?
-	</div>
-
-</div>
-
-<h3> AJAX list</h3>
+<h3> Song requests:</h3>
 
 	<div id="ajaxlist">
-	where is my list?
+	<div class="span3"><b>Requestor</b></div>
+	<div class="span3"><b>Song</b></div>
+	<div class="span3"><b>Artist</b></div>
+	
 	</div>
 
 </div>

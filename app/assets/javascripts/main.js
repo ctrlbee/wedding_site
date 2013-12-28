@@ -23,7 +23,6 @@ $(document).ready(function() {
 	//nav 
 	//
 	//
-
 	$('.scroller').click(function(e){
 		e.preventDefault(); 
 		var href = $(this).attr("href"); 
@@ -68,44 +67,47 @@ $(document).ready(function() {
 			method: "POST", 
 			data: values, 
 			success: function() {
-				alert('saved!!'); 
+				alert('Thanks, we will do our best to play your jam!'); 
 				$('input[type=text]').val(''); 
 			},
 			error: function(){
-				alert('fail!'); 
+				alert('Fail! Please try again.'); 
 			}
 		}); 
 	});
 
-
-	$.ajax({
-		url:"songrequests.json", 
-		method:"GET", 
-		dataType: "JSON", 
-		success: function(data){
-			//alert("got it!"); 
-			for(i=0;i<data.length;i++){
-				$('#ajaxlist').append("<p>"+data[i].title+"</p>"); 
-			}
-
-		},	
-		error: function(){
-			alert("failed to get it");
-		}
-
-	});
-
-
+	//Request JSON from RoR endpoint 
 	$.getJSON("songrequests.json",function(songs){
 		$.each(songs, function(s, song){
-			$('#ajaxlist2').append("<p>"+song.title+"</p>"); 
-		})
+			$('#ajaxlist').append("<div class=span3>"+song.requestor+"</div><div class=span3>"+song.title+"</div><div class=span3>"+song.artist+"</p>"); 
+		}); 
 	});
-	
+
+	// longer way of doing AJAX request
+
+	// $.ajax({
+	// 	url:"songrequests.json", 
+	// 	method:"GET", 
+	// 	dataType: "JSON", 
+	// 	success: function(data){
+	// 		alert("got it!"); 
+	// 		for(i=0;i<data.length;i++){
+	// 			$('#ajaxlist').append("<p>"+data[i].title+"</p>"); 
+	// 		}
+
+	// 	},	
+	// 	error: function(){
+	// 		alert("failed to get it");
+	// 	}
+
+	// });
+
+
+
 
 	//
 	//
-	//hover stuff 
+	//event hover stuff 
 	//
 	//
 	var popupHalfHeight; 
