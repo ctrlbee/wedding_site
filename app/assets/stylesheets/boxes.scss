@@ -65,6 +65,12 @@
 	.hr6{
 		@include eventBox(170px); 
 	}
+	.hr7{
+		@include eventBox(200px); 
+	}
+	.hr8{
+		@include eventBox(230px); 
+	}
 	.blank{
 		border: 0; 
 	}
