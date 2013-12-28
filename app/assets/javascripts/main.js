@@ -38,19 +38,19 @@ $(document).ready(function() {
 	//
 	//
 
-	$('.regImg1').mouseenter(function() {
-		$(this).attr("src","assets/tj_color.png"); 	
-	}); 
-	$('.regImg1').mouseleave(function() {
-		$(this).attr("src","assets/tj_bw.png"); 	
-	});
+	// $('.regImg1').mouseenter(function() {
+	// 	$(this).attr("src","assets/tj_color.png"); 	
+	// }); 
+	// $('.regImg1').mouseleave(function() {
+	// 	$(this).attr("src","assets/tj_bw.png"); 	
+	// });
 
-	$('.regImg3').mouseenter(function() {
-		$(this).attr("src","assets/amazon_color.jpg"); 	
-	}); 
-	$('.regImg3').mouseleave(function() {
-		$(this).attr("src","assets/amazon_bw.jpg"); 	
-	});
+	// $('.regImg3').mouseenter(function() {
+	// 	$(this).attr("src","assets/amazon_color.jpg"); 	
+	// }); 
+	// $('.regImg3').mouseleave(function() {
+	// 	$(this).attr("src","assets/amazon_bw.jpg"); 	
+	// });
 
 
 	//
