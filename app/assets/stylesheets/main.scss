@@ -66,12 +66,14 @@
 }
 
 #footer{
-	@include setbg(white);
+	@include setbg($color3);
 
 }
 
 .big-img{
-	
+	max-height: 350px; 
+	display: block; 
+	margin: auto; 
 }
 
 .sm-img{
@@ -79,8 +81,8 @@
 }
 
 .huge {
-	font-size: 150px;
+	font-size: 200px;
 	font-weight: bold; 
-	padding-top: 80px; 
+	padding-top: 150px; 
 	text-align: center;
 }
